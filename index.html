@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Home</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background-color: #f8f9fa; color: #333; }
+
+    header {
+      background-color: #222; color: white; padding: 15px 50px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+
+    nav ul { display: flex; list-style: none; gap: 25px; }
+    nav a { color: white; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: #f8d210; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+      height: 300px; display: flex; align-items: center; justify-content: center;
+      color: white; text-align: center;
+    }
+
+    .hero h2 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px; border-radius: 10px;
+    }
+
+    .products { padding: 50px; }
+    .products h2 { text-align: center; margin-bottom: 40px; font-size: 28px; }
+
+    .product-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;
+    }
+
+    .card {
+      background: white; border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden; transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+
+    .card img { width: 100%; height: 250px; object-fit: cover; }
+
+    .card-content { padding: 15px; text-align: center; }
+    .card-content h3 { margin: 10px 0; font-size: 20px; }
+    .price { color: #007bff; font-weight: bold; font-size: 18px; }
+
+    .btn {
+      display: inline-block; margin-top: 10px;
+      background-color: #007bff; color: white;
+      padding: 10px 20px; border-radius: 5px; text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .btn:hover { background-color: #0056b3; }
+
+    footer {
+      background-color: #222; color: #ccc;
+      text-align: center; padding: 20px; margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ShopEase</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="purchase.html">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to ShopEase - Your Online Store!</h2>
+  </section>
+
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c01?auto=format&fit=crop&w=800&q=80" alt="Headphones">
+        <div class="card-content">
+          <h3>Wireless Headphones</h3>
+          <p class="price">₹2,499</p>
+          <a href="purchase.html" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80" alt="Watch">
+        <div class="card-content">
+          <h3>Smart Watch</h3>
+          <p class="price">₹3,999</p>
+          <a href="purchase.html" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Shoes">
+        <div class="card-content">
+          <h3>Running Shoes</h3>
+          <p class="price">₹2,999</p>
+          <a href="purchase.html" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ShopEase. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
