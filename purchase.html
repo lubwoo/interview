@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Purchase</title>
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; }
+    header { background: #222; color: white; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; }
+    nav ul { display: flex; list-style: none; gap: 25px; }
+    nav a { color: white; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: #f8d210; }
+
+    .container {
+      width: 90%; max-width: 500px; background: white; margin: 50px auto;
+      padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 { text-align: center; margin-bottom: 25px; }
+    label { font-weight: 600; display: block; margin-top: 15px; }
+    input, select {
+      width: 100%; padding: 10px; margin-top: 8px;
+      border: 1px solid #ccc; border-radius: 5px;
+    }
+
+    .btn {
+      display: block; width: 100%; background: #007bff; color: white;
+      padding: 10px; border: none; border-radius: 5px; margin-top: 20px;
+      cursor: pointer; font-size: 16px;
+    }
+
+    .btn:hover { background: #0056b3; }
+
+    footer { background: #222; color: #ccc; text-align: center; padding: 15px; margin-top: 50px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ShopEase</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="purchase.html">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Purchase Details</h2>
+    <form action="thankyou.html">
+      <label>Name</label>
+      <input type="text" required>
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Address</label>
+      <input type="text" required>
+
+      <label>Product</label>
+      <select required>
+        <option value="">Select Product</option>
+        <option>Wireless Headphones</option>
+        <option>Smart Watch</option>
+        <option>Running Shoes</option>
+      </select>
+
+      <label>Payment Method</label>
+      <select required>
+        <option value="">Choose Method</option>
+        <option>Credit/Debit Card</option>
+        <option>UPI</option>
+        <option>Cash on Delivery</option>
+      </select>
+
+      <button type="submit" class="btn">Confirm Purchase</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ShopEase. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
